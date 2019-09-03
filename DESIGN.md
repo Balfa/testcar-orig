@@ -1,5 +1,5 @@
--# **Epic(s)**
-#139610
+# Epic(s)
+	* #139610
 
 [[_TOC_]]
 
@@ -8,7 +8,7 @@
 TODO: This whole section
 Drill into the specific design areas via the following sub-pages
 * [Overview](CONCEPTS.md)
-* [Testcar Runner](RUNNER.md)
+* [Testcar Agent](AGENT.md)
 * [Testcar Gate](GATE.md)
 * [Auto-injection](INJECTION.md)
 
@@ -49,3 +49,6 @@ Testcar itself has no DR system in place, since there is no durable storage or r
 
 # Security
 TODO: [Threat Model](/TODO)
+
+# Shortcomings of this documentation
+We're currently in a strange place where Artillery is both a module for Testcar, and _the only_ way Testcar works for the foreseeable future. As such, documentation might flip back and forth between taking Artillery's use for granted, and not.

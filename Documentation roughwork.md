@@ -22,3 +22,7 @@ Testcar Gate is required to be part of the ADO release pipeline of systems that 
 Testcar doesn't require any kind of horizontal scalability. It makes a best-effort one-shot attempt to run its suite of tests, and logs any success or failure.
 ## Performance
 Testcar doesn't operate within the customer's user flow. Poor performance will result in slower deployments and hence slower feedback loops to developers. As such, while performance is not crucial, it should not be completely ignored.
+
+
+# To address...
+I guess Testcar will run upon creation of every single pod of a given type. I haven't given much thought to this yet. I've been assuming it would run once per deployment, but it really continuously runs as long as the K8s deployment keeps starting and restarting pods.
