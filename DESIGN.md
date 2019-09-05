@@ -48,7 +48,8 @@ Testcar itself has no DR system in place, since there is no durable storage or r
 //TODO
 
 # Security
-TODO: [Threat Model](/TODO)
+[Threat Model](https://htmlpreview.github.com/?https://github.com/Balfa/testcar/blob/master/Testcar_threat_model_report.htm)
+(See also [Testcar_threat_model.tm7](Testcar_threat_model.tm7), created using Microsft Threat Modeling Tool 7.1)
 
 # Shortcomings of this documentation
 We're currently in a strange place where Artillery is both a module for Testcar, and _the only_ way Testcar works for the foreseeable future. As such, documentation might flip back and forth between taking Artillery's use for granted, and not.
