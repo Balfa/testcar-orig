@@ -5,7 +5,6 @@
 
 
 # Design
-TODO: This whole section
 Drill into the specific design areas via the following sub-pages
 * [Overview](CONCEPTS.md)
 * [Testcar Agent](AGENT.md)
@@ -43,9 +42,6 @@ Since this is a development tool and not within the customer's user flow, high a
 
 ## Disaster Recovery
 Testcar itself has no DR system in place, since there is no durable storage or recovery of data needed. Testcar only operates at time of deployment of its SUT, so any DR efforts to deploy the SUT to another cluster will result in Testcar being auto-injected and activated.
-
-## Build/Deployment
-//TODO
 
 # Security
 [Threat Model](https://htmlpreview.github.com/?https://github.com/Balfa/testcar/blob/master/Testcar_threat_model_report.htm)

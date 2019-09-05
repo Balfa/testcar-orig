@@ -5,7 +5,7 @@ An integration-testing sidecar for Kubernetes applications. Run integration test
 TODO
 
 # Concepts
-Testcar is a lightweight docker container that _can be_ (TODO: "can be" or "is"?) auto-injected into pods and will automatically find (by convention) and execute tests against the user container.
+Testcar is a lightweight docker container that is auto-injected into your cluster's pods and will automatically find (by convention) and execute tests against the user container. The results are consumed by an Azure Devops release pipeline task that can flag a deployment as successful or failing.
 
 ## Supported test frameworks
 Currently only [Artillery](https://artillery.io/) scripts are supported.

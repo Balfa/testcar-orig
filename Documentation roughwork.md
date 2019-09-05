@@ -26,3 +26,6 @@ Testcar doesn't operate within the customer's user flow. Poor performance will r
 
 # To address...
 I guess Testcar will run upon creation of every single pod of a given type. I haven't given much thought to this yet. I've been assuming it would run once per deployment, but it really continuously runs as long as the K8s deployment keeps starting and restarting pods.
+
+# Interesting reading, but not really relevant
+https://github.com/kubernetes/enhancements/issues/753

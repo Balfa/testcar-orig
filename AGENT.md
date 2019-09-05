@@ -12,10 +12,11 @@ The Testcar container will look for tests in `/etc/testcar/tests/`. This directo
 Testcar, having found the test definitions, must now pass these on to the actual test framework doing the work. In the case of Artillery, this is as simple as calling `artillery run -c <path>`.
 
 # Reporting
-First and foremost, Artillery should exit with an appropriate zero or non-zero exit code (TODO: confirm this). This should be the ultimate test of success.
-TODO: Confirm: I doubt K8s logs have any understanding of this exit code, so Testcar will have to capture and explicitly output the code for the benefit of Testcar Gate.
+First and foremost, Artillery exits with an appropriate zero or non-zero exit code. This should be the ultimate test of success. Testcar captures this and reports a machine readable status output for Testcar Gate.
+
 ## Log persistence
 K8s provides access to container logs for n and n-1 container instances. Since Testcar is a run-once-and-stay-dead, Testcar Gate will still have access to the one and only log set (n-1).
+
 ## Preventing container restarts
 We don't want Testcar continuously running. We also don't want it constantly overwriting the n-1 logs that Testcar Gate is relying on.
 TODO: Testcar runs once upon deployment, and then never again. How do we ensure it doesn't? Probably straightforward. Just call it out here anyway.
