@@ -4,7 +4,6 @@ Non-DOF documentation that would be good for Testcar:
 How to debug/test/etc.
 
 # Where do these sentences fit?
-auto-injection
 Fail-safe path and (un)intentional circumvention of Testcar
 In any of the following scenarios...
 	* Testcar runs tests and they fail
