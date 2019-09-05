@@ -1,9 +1,9 @@
 # Testcar Sidecar Agent
 The Testcar sidecar is responsible for:
-	* Discovery of tests
-	* Execution of the tests against the System Under Test (SUT)
-	* Reporting of results using standard Kubernetes patterns (i.e., stdout)
-	* Meeting any prerequisites for the test execution (e.g., obtaining appropriate credentials to call the SUT service)
+  * Discovery of tests
+  * Execution of the tests against the System Under Test (SUT)
+  * Reporting of results using standard Kubernetes patterns (i.e., stdout)
+  * Meeting any prerequisites for the test execution (e.g., obtaining appropriate credentials to call the SUT service)
 
 # Test Discovery
 The Testcar container will look for tests in `/etc/testcar/tests/`. This directory is a shared K8s volume mounted in both the Testcar container and the SUT container. The intent is that the SUT will be aware of Testcar's requirement to look in this directory and its container image will include some (Artillery) test definitions as well as the SUT itself. The location of these test definitions will then need to be specified in the K8s manifest for mounting the volume.
